@@ -3,13 +3,14 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:DemoWpfApp"
         mc:Ignorable="d"
-        Title="DemoWpfApp" Height="450" Width="800">
+        xmlns:local="clr-namespace:DemoWpfApp"
+        Title="Demo Wpf App - WAV Forming" Height="450" Width="800">
   <StackPanel>
-    <TextBlock Text="Press any button" />
-    <Button x:Name="button1" Content="Test 1" Height="32" Width="120" Click="button1_Click" />
-    <Button x:Name="button2" Content="Test 2" Height="32" Width="120" Click="button2_Click" />
-    <Button x:Name="button3" Content="Test 3" Height="32" Width="120" Click="button3_Click" />
+    <TextBlock Text="Press any button to play ..." HorizontalAlignment="Center" />
+    <Button x:Name="button1" Content="_1 note " Height="32" Width="120" Click="button1_Click" />
+    <Button x:Name="button2" Content="_2 notes" Height="32" Width="120" Click="button2_Click" />
+    <Button x:Name="button3" Content="_5 notes" Height="32" Width="120" Click="button3_Click" />
+    <Button x:Name="button4" Content="_Short"   Height="32" Width="120" Click="button4_Click" />
   </StackPanel>
 </Window>
