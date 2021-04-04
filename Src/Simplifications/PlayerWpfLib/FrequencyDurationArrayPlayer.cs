@@ -73,12 +73,12 @@ namespace PlayerWpfLib
 
     public static int FixDuration(int frequencyHz, int durationMks) // removing spikes on stitches by cutting off non-whole parts of waves.
     {
-      var times = durationMks * .000001 * frequencyHz;
-      var timesm = Math.Round(times);
-      if (timesm <= 0)
-        timesm = 1;
+      var timesDecimal = durationMks * .000001 * frequencyHz;
+      var timesWholePart = Math.Round(timesDecimal);
+      if (timesWholePart <= 0)
+        timesWholePart = 1;
 
-      return (int)(/*1.03125 * */1000000 * timesm / frequencyHz);
+      return (int)(1000000 * timesWholePart / frequencyHz);
     }
   }
 }
